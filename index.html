@@ -14,41 +14,37 @@
 <body class="text-white bg-[#0e0e11]">
     <!-- NAV BOX -->
 
-    <header class="">
+    <header class="fixed top-0 left-0 right-0 z-50 flex justify-between items-center h-[60px] bg-[#0e0e11A6]">
 
         <!-- Nav elements -->
-            <img class="" src="assets/icons/logo.svg" alt="Logo Klivio">
-            <p>Les formations</p>
-            <input type="text" placeholder="Rechercher">
-            <div class="">
-                <button class="">Connexion</button>
-                <button class="">Inscription</button>
-            </div>
+            <img class="ml-8" src="assets/icons/logo.svg" alt="Logo Klivio">
+            <input type="text" placeholder="Rechercher" class="w-[30%] h-[30px] placeholder-white border border-solid rounded pl-2">
 
-        <!-- Nav mobile elements -->
-        <div class="">
-            <div class="">
-                <input type="checkbox" />
-                <label class="" for="">
-                    <span></span>
-                </label>
+            <input type="checkbox" id="menu-toggle" class="hidden peer">
+            <label for="menu-toggle" class="mr-8 cursor-pointer z-10">
+                <div class="w-6 h-0.5 bg-white mb-1.5"></div>
+                <div class="w-6 h-0.5 bg-white mb-1.5"></div>
+                <div class="w-6 h-0.5 bg-white"></div>
+            </label>
 
-                <ul class="">
-                    <li class="">Les formations</li>
-                    <li class=""><input type="text" placeholder="Rechercher"></li>
-                    <li class=""><button>Connexion</button></li>
-                    <li class=""><button>Inscription</button></li>
-                </ul>
-            </div>
+            <nav class="hidden peer-checked:flex flex-col absolute top-[60px] right-0 bg-[#0e0e11A6] p-6 gap-4 min-w-[300px] min-h-screen shadow-xl">
+                <p>Les formations</p>
+                <button class="font-bold rounded-lg text-base w-[130px] h-[40px] bg-[#b5b6c4] text-[#ffffff] justify-center">Connexion</button>
+                <button class="font-bold rounded-lg text-base w-[130px] h-[40px] bg-gradient-to-tr from-[#45dac6] to-[#0c9588] mr-8">Inscription</button>
+            </nav>
         </div>
     </header>
 
     <main>
     <!-- HERO BOX-->
-        <div class="">
-            <h1>KLIVIO, L'ALLIÉ DE VOTRE PROGRESSION</h1>
-            <h2>LES MEILLEURS FORMATIONS SUR LE DÉVELOPPEMENT PERSONNEL</h2>
-            <button class="">En savoir plus</button>
+        <div class="relative bg-[url(assets/img/bg-header-mobile.png)] md:bg-[url(assets/img/bg-header.png)] bg-cover bg-center bg-no-repeat min-h-[28.125rem] flex flex-col justify-center items-center text-center px-4">
+            <div class="absolute inset-0 opacity-80" style="background: linear-gradient(135deg, #44DD8A, #0c9588);"></div>
+            
+            <div class="relative z-2">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">KLIVIO, L'ALLIÉ DE VOTRE PROGRESSION</h1>
+                <h2 class="mb-2">LES MEILLEURS FORMATIONS SUR LE DÉVELOPPEMENT PERSONNEL</h2>
+                <button class="bg-white text-[#000000] font-bold px-8 py-3 rounded-lg">En savoir plus</button>
+            </div>
         </div>
 
         <!-- MAIN -->
@@ -73,7 +69,7 @@
                     </div>
                     <p>Gagnez en aisance et captez votre auditoire</p>
                 </div>
-                <div class="">
+                <!-- <div class="">
                     <div class="">
                         <h1>15,99 €</h1>
                         <p>60 €</p>
@@ -205,7 +201,7 @@
             <div class="">
                 <button class="">Voir plus de formations</button>
             </div>
-        </div>
+        </div> -->
 
         <div class="">
             <h1>AVIS CLIENTS</h1>
